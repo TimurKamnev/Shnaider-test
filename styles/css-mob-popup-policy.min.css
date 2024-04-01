@@ -1,0 +1,86 @@
+@media (max-width:991px) {
+  .policy-pop-up {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    bottom: 76px;
+    left: 10px;
+    right: 10px;
+    max-width: 300px;
+    min-height: 46px;
+    margin: auto;
+    padding: 9px 10px;
+    border-radius: 3px;
+    background: #777;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .04), 0 2px 6px rgba(0, 0, 0, .04), 0 0 1px rgba(0, 0, 0, .04);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .04), 0 2px 6px rgba(0, 0, 0, .04), 0 0 1px rgba(0, 0, 0, .04);
+    -webkit-transition: opacity .4s;
+    -o-transition: opacity .4s;
+    transition: opacity .4s;
+    opacity: 0
+  }
+
+  .policy-pop-up.active {
+    display: block;
+    -webkit-transition: opacity .4s;
+    -o-transition: opacity .4s;
+    transition: opacity .4s;
+    opacity: 1
+  }
+
+  .pop-up-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+
+  .policy-pop-up-text {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 10px;
+    line-height: 14px
+  }
+
+  .policy-pop-up-text a {
+    color: #fff
+  }
+
+  .policy-pop-up-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 92px
+  }
+
+  .policy-pop-up-close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 120px;
+    height: 28px;
+    border-radius: 3px;
+    color: #777;
+    font-size: 12px;
+    line-height: 1;
+    background-color: #fff
+  }
+}
